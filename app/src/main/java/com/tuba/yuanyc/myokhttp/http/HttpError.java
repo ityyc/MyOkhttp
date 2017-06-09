@@ -6,8 +6,7 @@ package com.tuba.yuanyc.myokhttp.http;
  * Description ：
  */
 
-public class GlobalOkHttpManager {
-    public static void sendRequest() {
-
-    }
+public interface HttpError {
+    Handle getHandle();
+    Throwable getThrowable();
 }
